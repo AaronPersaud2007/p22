@@ -5,7 +5,7 @@ class PlayerArcher {
       isStatic: true
     };
 
-  //  this.body = Matter.Bodies(x, y, width, height, options);
+  //this.body = Matter.Bodies(x, y, width, height, options);
   //  this.body = Matter.Bodies.rect(x, y, width, height);
   //  this.body = Matter.rectangle(x, y, width, height, options);
     this.body = Matter.Bodies.rectangle(x, y, width, height, options);
@@ -13,7 +13,7 @@ class PlayerArcher {
     this.width = width;
     this.height = height;
     this.collapse = false;
-    this.image = loadImage("./assets/playerArcher.png");
+    this.image = loadImage("playerArcher.png");
 
     World.add(world, this.body);
     Matter.Body.setAngle(this.body, -90);
